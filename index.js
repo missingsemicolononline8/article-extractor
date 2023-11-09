@@ -14,7 +14,7 @@ app.use(cors());
 
 setSanitizeHtmlOptions({
   allowedTags: [
-      "p","br","div","h1","h2","h3","h4","h5","h6"
+      "p","br","h1","h2","h3","h4","h5","h6"
   ]
 })
 
