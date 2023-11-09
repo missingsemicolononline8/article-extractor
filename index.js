@@ -12,12 +12,12 @@ const proxy = 'http://abc:RaNdoMpasswORd_country-France@proxy.packetstream.io:31
 
 app.use(cors());
 
-setSanitizeHtmlOptions({
+/* setSanitizeHtmlOptions({
   allowedTags: [
       "p","br","h1","h2","h3","h4","h5","h6"
   ]
 })
-
+ */
 app.get('/extract', async(req,res) => {
   const article = await extract(req.query.url)
   console.log(article.content)
